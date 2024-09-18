@@ -8,3 +8,9 @@ body {
 	margin: auto;
 	padding: 1em;
 }
+
+
+html {
+	scroll-behavior: smooth;
+  }
+  

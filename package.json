@@ -4,7 +4,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"deploy": "vite build && gh-pages -d build",
+		"deploy": "gh-pages -d build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
@@ -34,6 +34,11 @@
 		"vitest": "^0.25.8",
 		"web-vitals": "^3.5.0"
 	},
+	
+		"homepage": "https://yamat0002.github.io/spocs4gaza",
+	
+
+
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/vite-plugin-svelte": "^3.1.2",
