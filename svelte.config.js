@@ -1,16 +1,10 @@
-import adapter from '@sveltejs/adapter-static';
+import vercel from '@sveltejs/adapter-vercel';
 
 export default {
   kit: {
-    adapter: adapter({
-      pages: 'build',
-      assets: 'build',
-      fallback: 'index.html'
-
-    
-    }),
+    adapter: vercel(),  // Use Vercel adapter for serverless deployment
     paths: {
-      base: '/spocs4gaza',  // Make sure this matches your GitHub Pages repo name
+      base: '/spocs4gaza'  // Adjust as per your deployment path
     }
   }
 };
