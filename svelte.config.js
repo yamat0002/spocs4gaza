@@ -5,7 +5,8 @@ export default {
     adapter: adapter({
       pages: 'build',
       assets: 'build',
-      strict: false
+      fallback:'index,html'
+    
     }),
     paths: {
       base: '/spocs4gaza',  // Make sure this matches your GitHub Pages repo name
