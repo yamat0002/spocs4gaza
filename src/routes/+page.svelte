@@ -76,54 +76,49 @@
     }
 
 </style>
-<script context="module">
-    export const ssr = false;
-</script>
+
 
 <script>
-  import { onMount } from 'svelte';
 
-  let team = [];
+    let team = [];
 
-  onMount(() => {
+    // create team member
     let member = {
-      name: 'John Doe',
-      title: 'Teaching Assistant 👨‍🏫',
-      bio: "I'm a Computer Science and Engineering (6-3) student, and I teach Intro to CS and Calc I (or smth).",
-      email: 'john.doe@mit.edu',
-      pic: '/spocs4gaza/src/lib/team_pics/john_doe.jpeg' // make sure ratio is 1:1
-    };
-    team.push(member);
+        'name': 'John Doe',
+        'title': 'Teaching Assistant 👨‍🏫',
+        'bio': 'I\'m a Computer Science and Engineering (6-3) student, and I teach Intro to CS and Calc I (or smth).',
+        'email': 'john.doe@mit.edu',
+        'pic': '/spocs4gaza/src/lib/team_pics/john_doe.jpeg' // make sure ratio is 1:1
+    }
+    team.push(member)
 
     let another_member = {
-      name: 'Uni Corn',
-      title: 'Teaching Unicorn 🧑‍🏫',
-      bio: "I'm a unicorn! 🦄",
-      email: 'uni.corn@wonderland.edu',
-      pic: '/spocs4gaza/src/lib/team_pics/unicorn.jpeg' // make sure ratio is 1:1
-    };
-    team.push(another_member);
+        'name': 'Uni Corn',
+        'title': 'Teaching Unicorn 🧑‍🏫',
+        'bio': 'I\'m a unicorn! 🦄',
+        'email': 'uni.corn@wonderland.edu',
+        'pic': '/spocs4gaza/src/lib/team_pics/unicorn.jpeg' // make sure ratio is 1:1
+    }
+    team.push(another_member)
 
     another_member = {
-      name: 'Jane Doe',
-      title: 'Teaching Assistant 👩‍🏫',
-      bio: "I'm a Mathematics and Computation (18C) student, and I teach Calc I and Calc II (or smth).",
-      email: 'jane.doe@mit.edu',
-      pic: '/spocs4gaza/src/lib/team_pics/jane_doe.jpeg' // make sure ratio is 1:1
-    };
-    team.push(another_member);
+        'name': 'Jane Doe',
+        'title': 'Teaching Assistant 👩‍🏫',
+        'bio': 'I\'m a Mathematics and Computation (18C) student, and I teach Calc I and Calc II (or smth).',
+        'email': 'jane.doe@mit.edu',
+        'pic': '/spocs4gaza/src/lib/team_pics/jane_doe.jpeg' // make sure ratio is 1:1
+    }
+    team.push(another_member)
 
     another_member = {
-      name: 'Jenna Doe',
-      title: 'Lab Assistant 👩‍🔬',
-      bio: "I'm a Mathematics (18) student, and I teach Calc I and Calc II (or smth).",
-      email: 'jenna.doe@mit.edu',
-      pic: '/spocs4gaza/src/lib/team_pics/jenna_doe.jpeg' // make sure ratio is 1:1
-    };
-    team.push(another_member);
-  });
+        'name': 'Jenna Doe',
+        'title': 'Lab Assistant 👩‍🔬',
+        'bio': 'I\'m a Mathematics (18) student, and I teach Calc I and Calc II (or smth).',
+        'email': 'jenna.doe@mit.edu',
+        'pic': '/spocs4gaza/src/lib/team_pics/jenna_doe.jpeg' // make sure ratio is 1:1
+    }
+    team.push(another_member)
 </script>
-
 
 <center>
     <h1>MIT Small Private Online Courses for Gaza</h1>
