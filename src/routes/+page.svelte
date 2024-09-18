@@ -90,7 +90,7 @@
         'title': 'Teaching Assistant 👨‍🏫',
         'bio': 'I\'m a Computer Science and Engineering (6-3) student, and I teach Intro to CS and Calc I (or smth).',
         'email': 'john.doe@mit.edu',
-        'pic': 'src/lib/team_pics/john_doe.jpeg' // make sure ratio is 1:1
+        'pic': '/spocs4gaza/src/lib/team_pics/john_doe.jpeg' // make sure ratio is 1:1
     }
     team.push(member)
 
@@ -99,7 +99,7 @@
         'title': 'Teaching Unicorn 🧑‍🏫',
         'bio': 'I\'m a unicorn! 🦄',
         'email': 'uni.corn@wonderland.edu',
-        'pic': 'src/lib/team_pics/unicorn.jpeg' // make sure ratio is 1:1
+        'pic': '/spocs4gaza/src/lib/team_pics/unicorn.jpeg' // make sure ratio is 1:1
     }
     team.push(another_member)
 
@@ -108,7 +108,7 @@
         'title': 'Teaching Assistant 👩‍🏫',
         'bio': 'I\'m a Mathematics and Computation (18C) student, and I teach Calc I and Calc II (or smth).',
         'email': 'jane.doe@mit.edu',
-        'pic': 'src/lib/team_pics/jane_doe.jpeg' // make sure ratio is 1:1
+        'pic': '/spocs4gaza/src/lib/team_pics/jane_doe.jpeg' // make sure ratio is 1:1
     }
     team.push(another_member)
 
@@ -117,7 +117,7 @@
         'title': 'Lab Assistant 👩‍🔬',
         'bio': 'I\'m a Mathematics (18) student, and I teach Calc I and Calc II (or smth).',
         'email': 'jenna.doe@mit.edu',
-        'pic': 'src/lib/team_pics/jenna_doe.jpeg' // make sure ratio is 1:1
+        'pic': '/spocs4gaza/src/lib/team_pics/jenna_doe.jpeg' // make sure ratio is 1:1
     }
     team.push(another_member)
 </script>
