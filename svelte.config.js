@@ -6,7 +6,7 @@ export default {
       pages: 'build',
       assets: 'build',
       strict: false,
-      fallback: null // No fallback needed for a single-page app
+      fallback: 'index.html' // No fallback needed for a single-page app
     }),
     paths: {
       base: '/spocs4gaza',  // Base path matches your GitHub Pages repo name

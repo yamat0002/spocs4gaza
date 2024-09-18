@@ -91,7 +91,6 @@
         'title': 'Teaching Assistant 👨‍🏫',
         'bio': 'I\'m a Computer Science and Engineering (6-3) student, and I teach Intro to CS and Calc I (or smth).',
         'email': 'john.doe@mit.edu',
-        'pic': './team_pics/john_doe.jpeg' // make sure ratio is 1:1
     }
     team.push(member);
 
@@ -100,7 +99,6 @@
         'title': 'Teaching Unicorn 🧑‍🏫',
         'bio': 'I\'m a unicorn! 🦄',
         'email': 'uni.corn@wonderland.edu',
-        'pic': './team_pics/unicorn.jpeg' // make sure ratio is 1:1
     }
     team.push(another_member);
 
@@ -109,7 +107,6 @@
         'title': 'Teaching Assistant 👩‍🏫',
         'bio': 'I\'m a Mathematics and Computation (18C) student, and I teach Calc I and Calc II (or smth).',
         'email': 'jane.doe@mit.edu',
-        'pic': './team_pics/jane_doe.jpeg' // make sure ratio is 1:1
     }
     team.push(another_member);
 
@@ -118,7 +115,6 @@
         'title': 'Lab Assistant 👩‍🔬',
         'bio': 'I\'m a Mathematics (18) student, and I teach Calc I and Calc II (or smth).',
         'email': 'jenna.doe@mit.edu',
-        'pic': './team_pics/jenna_doe.jpeg' // make sure ratio is 1:1
     }
     team.push(another_member);
 </script>
@@ -181,7 +177,6 @@
     <div id="team-container">
         {#each team as member}
             <div class="team-ticket">
-                <img class="team-img" src="{member.pic}">
                 <h3>{member.name}</h3>
                 <h4>{member.title}</h4>
                 <p>{member.bio} <br><br> 📧: <a href="mailto:{member.email}">{member.email}</a></p>
