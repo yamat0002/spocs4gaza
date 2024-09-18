@@ -77,7 +77,7 @@
 
 </style>
 <script context="module">
-    export const prerender = true;
+    export const ssr = false;
 </script>
 
 <script>
