@@ -5,10 +5,13 @@ export default {
     adapter: adapter({
       pages: 'build',
       assets: 'build',
-      fallback: 'app.html'
+      fallback: 'index.html',
+      precompress: false,
+      strict: true
     }),
     paths: {
       base: '/spocs4gaza',  
     }
   }
 };
+

@@ -1,0 +1,35 @@
+name: Deploy to GitHub Pages
+
+# Trigger the workflow on pushes to the 'main' branch
+on:
+  push:
+    branches:
+      - main  # You can change 'main' to your default branch if needed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the code from the repository
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js to install dependencies
+      - name: Install Node.js, npm, and dependencies
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # You can change the Node.js version if needed
+
+      # Step 3: Install dependencies
+      - run: npm install
+
+      # Step 4: Build the project (this creates the static files)
+      - run: npm run build
+
+      # Step 5: Deploy the static files to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # This provides the GitHub access token
+          publish_dir: ./build  # This should match your output directory from svelte.config.js

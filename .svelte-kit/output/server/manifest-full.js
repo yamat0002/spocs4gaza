@@ -7,10 +7,10 @@ function __memo(fn) {
 return {
 	appDir: "_app",
 	appPath: "spocs4gaza/_app",
-	assets: new Set(["favicon.png"]),
+	assets: new Set([".nojekyll","favicon.png"]),
 	mimeTypes: {".png":"image/png"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.Dmj555Ob.js","app":"_app/immutable/entry/app.HAOwuzfT.js","imports":["_app/immutable/entry/start.Dmj555Ob.js","_app/immutable/chunks/entry.LhkAt2ZA.js","_app/immutable/chunks/scheduler.DUa3pFyD.js","_app/immutable/entry/app.HAOwuzfT.js","_app/immutable/chunks/scheduler.DUa3pFyD.js","_app/immutable/chunks/index.Bu3Rlg_J.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
+		client: {"start":"_app/immutable/entry/start.D8OSaLa8.js","app":"_app/immutable/entry/app.DG07D80y.js","imports":["_app/immutable/entry/start.D8OSaLa8.js","_app/immutable/chunks/entry.yjEJTNib.js","_app/immutable/chunks/scheduler.DUa3pFyD.js","_app/immutable/entry/app.DG07D80y.js","_app/immutable/chunks/scheduler.DUa3pFyD.js","_app/immutable/chunks/index.Bu3Rlg_J.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
