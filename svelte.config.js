@@ -5,13 +5,13 @@ export default {
     adapter: adapter({
       pages: 'build',
       assets: 'build',
-      fallback: 'index.html',
-      precompress: false,
-      strict: true
+      fallback: 'index.html',  // Use fallback if you're running a SPA
     }),
     paths: {
-      base: '/spocs4gaza',  
+      base: '/spocs4gaza',  // Make sure this matches your GitHub Pages repo name
+    },
+    prerender: {
+      crawl: true  // This will find links and prerender them
     }
   }
 };
-

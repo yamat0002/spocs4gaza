@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v3
 
       # Step 2: Set up Node.js to install dependencies
-      - name: Install Node.js, npm, and dependencies
+      - name: Install Node.js 20, npm, and dependencies
         uses: actions/setup-node@v3
         with:
           node-version: '16'  # You can change the Node.js version if needed
